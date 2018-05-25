@@ -1,5 +1,5 @@
 #stage{
-    background: url(./images/css_animation_exercise_stage.png) 0 0 no-repeat;
+    background: url(./images/css_animation_exercise_4.png) 0 0 no-repeat;
     width: 600px;
     height:600px;
     margin: auto;
@@ -9,46 +9,71 @@
 }
 
 @keyframes move1{
-    0%{left:10px; top:10px;}
-    100%{left:515px;top:10px;}
+    0%{
+        left:20px; 
+        top:20px;
+    }
+    100%{
+        left:500px;
+        top:20px;
+    }
 }
 @keyframes move2{
-    0%{left:515px;top:10px;}
-    100%{left:515px;top:215px;}
+    0%{
+        left:500px;
+        top:20px;
+    }
+    100%{
+        left:500px;
+        top:200px;
+    }
 }
 @keyframes move3{
-    0%{left:515px;top:215px;}
-    100%{transform: rotate(90deg);left:262px; top:215px;}
+    0%{
+        left:500px;
+        top:200px;
+    }
+    100%{
+        transform: rotate(45deg);
+        left:270px; top:200px;
+    }
 }
 @keyframes move4{
-    0%{left:262px; top:215px;}
-    100%{transform: rotate(90deg);left:10px; top: 215px; border:1px dashed #0900BD;}
+    0%{
+        left:270px; 
+        top:200px;
+    }
+    100%{
+        transform: rotate(90deg);
+        left:20px; 
+        top: 204px; 
+        border:1px dashed #0900BD;
+    }
 }
 @keyframes move5{
     0%{transform: rotate(0deg);
-        left:10px; 
+        left:20px; 
         top: 215px; 
         border:1px dashed #0900BD;
-        background:radial-gradient(circle,rgba(247, 107, 28,0),rgba(251, 218, 97,0));
+        background:radial-gradient(circle,rgba(251, 218, 97,0),rgba(247, 107, 28,0));
     }
     100%{
         transform:rotate(0deg);
-        left:440px; 
-        top: 440px;
+        left:441px; 
+        top: 441px;
         border:1px dashed #0900BD; 
-        background:radial-gradient(circle,rgba(247, 107, 28,1),rgba(251, 218, 97,1));
+        background:radial-gradient(circle,rgba(251, 218, 97,1),rgba(247, 107, 28,1));
         border-radius: 50%;
         height:150px;
         width:150px;
         border-color:transparent;
     }
 }
-
 #hero{
     border: 1px dashed red;
     color:transparent;
-    height:75px;
-    width:75px;
+    height:74px;
+    width:74px;
     position:absolute;
     left: 10px;
     top: 10px;
@@ -57,6 +82,6 @@
                 move2 2s linear forwards 5s,
                 move3 0.5s linear forwards 7s,
                 move4 2.5s linear forwards 9.5s,
-                move5 5s linear forwards 12s;
+                move5 5s linear forwards 15s;
     /*animation-iteration-count:infinite, infinite, infinite, infinite, infinite;*/
 }
