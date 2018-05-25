@@ -21,7 +21,7 @@ list of objectives available at https://becodeorg.github.io/end-of-prairie-techn
 1. **Self-learning**
 * Used https://www.w3schools.com/cssref/css3_pr_transform.asp to figure out how to rotate elements;
 * tried to use one `@keyframes` for the whole animation, but switched to chaining several small ones after finding out it was possible (via stackoverflow);
-* Realized it `animation-iteration` used on multiple `@keyframes` would only repeat the last one, so repeating the whole animation would require using a big one to centralize all elements;
+* Realized `animation-iteration` used on multiple `@keyframes` would only repeat the last one, so repeating the whole animation would require using a big one to centralize all elements;
 * Followed instructions from github to deploy https://son-css-challenge.tk;
 * Figured out creating a custom url for Github Pages adds a file on the master branch, so `pull`is necessary straightafterwards (or maybe branching would've been useful for thisproject after all);
 * Asked peers for help with solving `@keyframes` sequence issue (solved by using `animation-delay`);
