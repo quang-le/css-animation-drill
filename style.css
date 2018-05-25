@@ -19,5 +19,6 @@
     left: 10px;
     top: 10px;
     animation:move;
-    animation-duration: 2s;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
 }
