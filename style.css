@@ -8,10 +8,27 @@
     color:transparent;
 }
 
-@keyframes move{
+@keyframes move1{
     0%{left:10px; top:10px;}
     100%{left:515px;top:10px;}
 }
+@keyframes move2{
+    0%{left:515px;top:10px;}
+    100%{left:515px;top:215px;}
+}
+@keyframes move3{
+    0%{left:515px;top:215px;}
+    100%{transform: rotate(90deg);left:262px; top:215px;}
+}
+@keyframes move4{
+    0%{left:262px; top:215px;}
+    100%{transform: rotate(90deg);left:10px; top: 215px; border:1px dashed #0900BD;}
+}
+@keyframes move5{
+    0%{left:10px; top: 215px; border:1px dashed #0900BD;}
+    100%{left:515px; top: 515px;}
+}
+
 #hero{
     border: 1px dashed red;
     color:transparent;
@@ -20,7 +37,11 @@
     position:absolute;
     left: 10px;
     top: 10px;
-    animation:move;
-    animation-duration: 5s;
-    animation-iteration-count:infinite;
+    animation: 
+                move1 5s linear forwards 1s, 
+                move2 2s linear forwards 5s,
+                move3 0.5s linear forwards 7s,
+                move4 2.5s linear forwards 9.5s,
+                move5 5s linear forwards 12s;
+    /*animation-iteration-count:infinite, infinite, infinite;*/
 }
