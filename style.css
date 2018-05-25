@@ -25,8 +25,23 @@
     100%{transform: rotate(90deg);left:10px; top: 215px; border:1px dashed #0900BD;}
 }
 @keyframes move5{
-    0%{left:10px; top: 215px; border:1px dashed #0900BD;}
-    100%{left:515px; top: 515px;}
+    0%{transform: rotate(0deg);
+        left:10px; 
+        top: 215px; 
+        border:1px dashed #0900BD;
+        background:radial-gradient(circle,rgba(247, 107, 28,0),rgba(251, 218, 97,0));
+    }
+    100%{
+        transform:rotate(0deg);
+        left:440px; 
+        top: 440px;
+        border:1px dashed #0900BD; 
+        background:radial-gradient(circle,rgba(247, 107, 28,1),rgba(251, 218, 97,1));
+        border-radius: 50%;
+        height:150px;
+        width:150px;
+        border-color:transparent;
+    }
 }
 
 #hero{
@@ -38,10 +53,10 @@
     left: 10px;
     top: 10px;
     animation: 
-                move1 5s linear forwards 1s, 
+                move1 5s linear forwards 0s, 
                 move2 2s linear forwards 5s,
                 move3 0.5s linear forwards 7s,
                 move4 2.5s linear forwards 9.5s,
                 move5 5s linear forwards 12s;
-    /*animation-iteration-count:infinite, infinite, infinite;*/
+    /*animation-iteration-count:infinite, infinite, infinite, infinite, infinite;*/
 }
