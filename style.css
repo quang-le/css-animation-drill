@@ -1,12 +1,3 @@
-#stage{
-    background: url(./images/css_animation_exercise_stage.png) 0 0 no-repeat;
-    width: 600px;
-    height:600px;
-    margin: auto;
-    position: relative;
-    color:transparent;
-}
-
 @keyframes move1{
     0%{
         left:20px; 
@@ -67,6 +58,14 @@
         width:150px;
         border-color:transparent;
     }
+}
+#stage{
+    background: url(./images/css_animation_exercise_stage.png) 0 0 no-repeat;
+    width: 600px;
+    height:600px;
+    margin: auto;
+    position: relative;
+    color:transparent;
 }
 #hero{
     border: 1px dashed red;
