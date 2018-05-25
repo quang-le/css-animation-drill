@@ -1,7 +1,15 @@
 #stage{
-  background: url(./images/css_animation_exercise_stage.png) 0 0 no-repeat;
-  width: 600px;
-  height:600px;
-  margin: auto;
-  outline: 1px solid red;
+    background: url(./images/css_animation_exercise_stage.png) 0 0 no-repeat;
+    width: 600px;
+    height:600px;
+    margin: auto;
+    outline: 1px solid red;
+    position: relative
+}
+#hero{
+    border: 1px dashed red;
+    height:75px;
+    width:75px;
+    position:absolute;
+    left: 20px;
 }
