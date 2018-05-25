@@ -4,15 +4,18 @@
     height:600px;
     margin: auto;
     outline: 1px solid red;
-    position: relative
+    position: relative;
+    color:transparent;
 }
 
 @keyframes move{
     0%{left:10px; top:10px;}
-    100%{left:515px;top:10px;}
+    50%{left:515px;top:10px;}
+    100%{left:10px; top:10px;}
 }
 #hero{
     border: 1px dashed red;
+    color:transparent;
     height:75px;
     width:75px;
     position:absolute;
