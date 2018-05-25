@@ -6,10 +6,18 @@
     outline: 1px solid red;
     position: relative
 }
+
+@keyframes move{
+    0%{left:10px; top:10px;}
+    100%{left:515px;top:10px;}
+}
 #hero{
     border: 1px dashed red;
     height:75px;
     width:75px;
     position:absolute;
-    left: 20px;
+    left: 10px;
+    top: 10px;
+    animation:move;
+    animation-duration: 2s;
 }
