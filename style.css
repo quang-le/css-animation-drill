@@ -82,3 +82,13 @@
                 move4 2.5s linear forwards 9.5s,
                 move5 5s linear forwards 12s;
 }
+.stageBorder{
+    color:transparent;
+    border: 1px dashed lightgrey;
+    background-color: lightgrey;
+    height:586px;
+    width:586px;
+    margin:auto;
+    position: absolute;
+    top:7px;
+}
